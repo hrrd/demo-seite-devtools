@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus-Café</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="kopf">
+    <img class="logo" src="logo.pgn" alt="Campus-Café Logo" width="64" height="64">
+    <div>
+      <h1>Campus-Café</h1>
+      <p class="untertitel">Frisch gekocht, direkt am Hörsaal</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="abschnitt speisekarte-box" id="speisekarte">
+      <h2>Speisekarte</h2>
+      <div class="karten">
+        <article class="karte">
+          <h3>Gemüselasagne</h3>
+          <p class="beschreibung">Mit Zucchini, Spinat und Tomatensoße</p>
+          <p class="preis">4,90 €</p>
+          <button type="button">In den Warenkorb</button>
+        </article>
+        <article class="karte">
+          <h3>Linsen-Dal</h3>
+          <p class="beschreibung">Rote Linsen, Kokosmilch, Basmatireis</p>
+          <p class="preis">4,20 €</p>
+          <button type="button">In den Warenkorb</button>
+        </article>
+        <article class="karte">
+          <h3>Käsespätzle</h3>
+          <p class="beschreibung">Mit Röstzwiebeln und kleinem Salat</p>
+          <p class="preis">5,10 €</p>
+          <button type="button">In den Warenkorb</button>
+        </article>
+        <article class="karte">
+          <h3>Tomatensuppe</h3>
+          <p class="beschreibung">Mit Basilikum und Brötchen</p>
+          <p class="preis">2,80 €</p>
+          <button type="button">In den Warenkorb</button>
+        </article>
+        <article class="karte">
+          <h3>Apfelstrudel</h3>
+          <p class="beschreibung">Mit Vanillesoße</p>
+          <p class="preis">2,40 €</p>
+          <button type="button">In den Warenkorb</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="abschnitt" id="warenkorb">
+      <h2>Warenkorb</h2>
+      <ul class="warenkorb-liste">
+        <li class="artikel" data-preis="2.50">
+          <span>Cappuccino</span>
+          <span>2,50 €</span>
+        </li>
+        <li class="artikel" data-preis="3.00">
+          <span>Bagel mit Frischkäse</span>
+          <span>3,00 €</span>
+        </li>
+      </ul>
+      <div class="aktionen">
+        <button type="button" id="summe-button">Summe berechnen</button>
+        <button type="button" id="kasse-button" class="primaer">Zur Kasse</button>
+      </div>
+      <p class="summe">Summe: <strong id="summe-ausgabe">–</strong></p>
+      <p class="hinweis" id="kasse-hinweis" hidden>Danke! Deine Bestellung wurde übermittelt.</p>
+    </section>
+
+    <section class="abschnitt" id="tagesangebot">
+      <h2>Tagesangebot</h2>
+      <ul class="angebot-liste" id="angebot-liste">
+        <li class="laden">Wird geladen …</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="fuss">
+    <p>Campus-Café · Mo–Fr 8–16 Uhr · Gebäude A, Erdgeschoss</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
