@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #faf6f0;
+  color: #2f2a25;
+  line-height: 1.5;
+}
+
+.kopf {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 16px;
+  background: #ffffff;
+  border-bottom: 3px solid #c4783a;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #f1e4d6;
+}
+
+.kopf h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #8a4b1f;
+}
+
+.untertitel {
+  margin: 0;
+  color: #6b625a;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 16px;
+}
+
+.abschnitt {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e6dccf;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.abschnitt h2 {
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #f1e4d6;
+  color: #8a4b1f;
+}
+
+.speisekarte-box {
+  width: 600px;
+}
+
+.karten {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.karte {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  background: #fffaf2;
+  border: 1px solid #ecdcc8;
+  border-radius: 10px;
+}
+
+.karte h3 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+}
+
+.beschreibung {
+  flex: 1;
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+  color: #6b625a;
+}
+
+.preis {
+  margin: 0 0 10px;
+  font-weight: 700;
+  color: #8a4b1f;
+}
+
+button {
+  padding: 8px 14px;
+  font: inherit;
+  font-size: 0.95rem;
+  color: #8a4b1f;
+  background: #ffffff;
+  border: 1px solid #c4783a;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #fdf0e3;
+}
+
+button.primaer {
+  color: #ffffff;
+  background: #c4783a;
+}
+
+button.primaer:hover {
+  background: #a9622b;
+}
+
+.warenkorb-liste,
+.angebot-liste {
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.artikel,
+.angebot {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px dashed #e6dccf;
+}
+
+.angebot:last-child {
+  border-bottom: none;
+}
+
+.angebot-preis {
+  font-weight: 700;
+  color: #8a4b1f;
+  white-space: nowrap;
+}
+
+.aktionen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.summe {
+  margin: 16px 0 0;
+  font-size: 1.1rem;
+}
+
+.hinweis {
+  margin: 8px 0 0;
+  padding: 10px 12px;
+  background: #eaf6ea;
+  border: 1px solid #b9dfb9;
+  border-radius: 8px;
+  color: #2d6a2d;
+}
+
+.laden {
+  color: #6b625a;
+}
+
+.fuss {
+  padding: 16px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b625a;
+}

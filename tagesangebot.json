@@ -1,0 +1,8 @@
+{
+  "datum": "heute",
+  "gerichte": [
+    { "name": "Kürbissuppe mit Kernöl", "preis": 3.2 },
+    { "name": "Hähnchen-Curry mit Reis", "preis": 5.5 },
+    { "name": "Falafel-Wrap mit Joghurtdip", "preis": 4.8 }
+  ]
+}
