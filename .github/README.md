@@ -14,8 +14,13 @@ python -m http.server
 Danach <http://localhost:8000> öffnen. (Die Seite nicht per `file://` öffnen,
 sonst schlägt der `fetch` auf `tagesangebot.json` fehl.)
 
-Vercel: Repository importieren, keine Einstellungen nötig (kein Framework,
-kein Build-Befehl). `index.html` liegt im Wurzelverzeichnis.
+Netlify oder Vercel: Repository importieren, keine Einstellungen nötig (kein
+Framework, kein Build-Befehl). `index.html` liegt im Wurzelverzeichnis.
+
+Diese README liegt bewusst in `.github/`: Netlify veröffentlicht keine Dateien
+und Ordner, deren Name mit einem Punkt beginnt. So ist die Fehlerliste auf der
+ausgelieferten Seite nicht abrufbar, GitHub zeigt sie aber weiterhin auf der
+Startseite des Repositorys an.
 
 ## Dateien
 
